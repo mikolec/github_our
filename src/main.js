@@ -6,6 +6,11 @@ import vuetify from "./plugins/vuetify";
 import axios from "axios";
 import VueAxios from "vue-axios";
 
+import BaseColumn from "./components/BaseColumn.vue";
+import BaseCard from "./components/BaseCard.vue";
+Vue.component("BColumn", BaseColumn);
+Vue.component("BCard", BaseCard);
+
 Vue.use(VueAxios, axios);
 
 Vue.config.productionTip = false;
